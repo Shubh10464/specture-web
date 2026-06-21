@@ -56,7 +56,7 @@ async function requestFCMToken() {
             
             // Get FCM token
             const token = await messaging.getToken({
-                vapidKey: "YOUR_VAPID_PUBLIC_KEY_HERE"
+                vapidKey: "BHocWEOOJA_BPU-OefSqkxdxHNHAcqJLHe6ddKvzwGD8GXV2kHvaKcra5IRP6ZjADPJOzgF1q46QZte9tccw5Qk"
                 // Get VAPID key from Firebase Console > Project Settings > Cloud Messaging
             });
             
@@ -160,7 +160,7 @@ messaging.onTokenRefresh(async () => {
     console.log('[FCM] Token refreshed');
     try {
         const newToken = await messaging.getToken({
-            vapidKey: "YOUR_VAPID_PUBLIC_KEY_HERE"
+            vapidKey: "BHocWEOOJA_BPU-OefSqkxdxHNHAcqJLHe6ddKvzwGD8GXV2kHvaKcra5IRP6ZjADPJOzgF1q46QZte9tccw5Qk"
         });
         
         if (newToken) {
